@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Digital Art Marketplace With Cargo JS</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+HK:400,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./cargo.min.js"></script>
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1 class="logo">Digital Art Marketplace</h1>
+      </header>
+      <div data-id="provider-required" class="hide">
+        <h1>Welcome!</h1>
+        <p>
+          In order to use this application you will need to connect your browser
+          to the Ethereum blockchain.
+        </p>
+        <p>
+          You can do this by installing
+          <a href="https://metamask.io">MetaMask</a>
+        </p>
+      </div>
+
+      <div data-id="provider-enabled" class="hide">
+        <h1>Welcome!</h1>
+        <p>You are connected to the Etereum blockchain.</p>
+      </div>
+    </div>
+  </body>
+</html>

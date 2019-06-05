@@ -1,0 +1,61 @@
+:root {
+  --color-primary: rgb(98, 33, 203);
+  --color-body: rgb(51, 51, 51);
+  --color-secondary-bg: rgb(253, 241, 229);
+  --type-main: 'Noto Sans HK', sans-serif;
+  --font-bold: 900;
+  --font-regular: 400;
+  --spacing-default: 25px;
+}
+
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--type-main);
+  color: var(--color-body);
+  background-color: var(--color-secondary-bg);
+  margin: 0;
+  padding: 50px;
+  display: flex;
+  height: 100%;
+}
+
+.wrap {
+  padding: var(--spacing-default);
+  background-color: #ffffff;
+  width: 100%;
+  border-radius: var(--spacing-default);
+  flex: 1;
+}
+
+header {
+  padding: 0 0 var(--spacing-default) 0;
+  margin-bottom: var(--spacing-default);
+  border-bottom: 1px solid #eee;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-weight: var(--font-bold);
+  color: var(--color-body);
+}
+
+a {
+  color: var(--color-primary);
+}
+
+.logo {
+  color: var(--color-primary);
+  font-size: 18px;
+}
+
+.hide {
+  display: none;
+}
