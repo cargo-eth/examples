@@ -1,4 +1,3 @@
-// We will modify the code within the run function
 const run = async () => {
   // Initialize cargo using the development network. This will fetch Cargo contract information
   // so we can begin interacting with those contracts when we are ready.
@@ -11,6 +10,10 @@ const run = async () => {
   // to the Ethereum blockcain.
   const isEnabled = await cargo.enable();
 
+  // cargo.enable returns true or false, depending on whether or not we can interact with
+  // the Cargo smart contracts. We are passing that boolean value to the showContent function
+  // which will show content for each case. If isEnabled equals false then we can show UI
+  // that tells the user to install MetaMask, or another MetaMask type product.
   showContent(isEnabled);
 };
 
