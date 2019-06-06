@@ -18,4 +18,6 @@ or
 yarn run:finish
 ```
 
-There is also an image included that you can upload during the tutorial.
+There is also an image included that you can upload during the tutorial:
+
+https://medium.com/@sean_44011/creating-a-decentralized-art-marketplace-with-cargo-js-f7252c801d0e
