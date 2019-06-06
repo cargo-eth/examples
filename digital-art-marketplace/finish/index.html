@@ -10,13 +10,11 @@
       href="https://fonts.googleapis.com/css?family=Noto+Sans+HK:400,900&display=swap"
       rel="stylesheet"
     />
-    <script src="/assets/cargo.min.js"></script>
-    <script src="/assets/main.js"></script>
   </head>
   <body>
     <div class="wrap">
       <header>
-        <h1 class="logo">Digital Art Marketplace</h1>
+        <h1 class="logo color-primary">Digital Art Marketplace</h1>
       </header>
       <div data-id="provider-required" class="hide">
         <h1>Welcome!</h1>
@@ -30,10 +28,20 @@
         </p>
       </div>
 
+      <div data-id="tx-confirmation"></div>
+
       <div data-id="provider-enabled" class="hide">
-        <h1>Welcome!</h1>
-        <p>You are connected to the Etereum blockchain.</p>
+        <h1>Tokens</h1>
+
+        <div data-id="token-rows">Loading contracts...</div>
+
+        <div data-id="owned-tokens-wrap" class="hide margin-top">
+          <h1>Owned Tokens</h1>
+          <div data-id="owned-tokens"></div>
+        </div>
       </div>
     </div>
+    <script src="/assets/cargo.min.js"></script>
+    <script src="/assets/main.js"></script>
   </body>
 </html>

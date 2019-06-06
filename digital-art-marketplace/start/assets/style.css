@@ -91,3 +91,18 @@ a {
   width: 100%;
   height: auto;
 }
+
+button {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background-color: #ede8f7;
+  color: var(--color-primary);
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.margin-top {
+  margin-top: var(--spacing-default);
+}

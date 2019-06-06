@@ -4,7 +4,7 @@ const app = express();
 
 const port = process.env.PORT || 3000;
 
-app.use('/assets', express.static('assets'));
+app.use('/assets', express.static(path.resolve(__dirname, 'assets')));
 
 app.get('/', (req, res) => {
   var options = {
