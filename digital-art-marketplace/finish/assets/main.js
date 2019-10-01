@@ -1,3 +1,9 @@
+// Initialize cargo using the development network.  This will
+// tell Cargo to use it's contracts on the Rinkeby network.
+const cargo = new Cargo({
+  network: 'development',
+});
+
 const CRATE_ID = '98';
 
 const getResaleItems = async () => {
@@ -85,11 +91,9 @@ const getOwnedTokens = async () => {
 };
 
 const run = async () => {
-  // Initialize cargo using the development network. This will fetch Cargo contract information
+  // This will fetch Cargo contract information
   // so we can begin interacting with those contracts when we are ready.
-  await cargo.init({
-    network: 'development',
-  });
+  await cargo.init();
 
   // In order to interact with cargo contracts we will need to call the enable method.
   // This determines if the user has a provider available that will allow us to connect

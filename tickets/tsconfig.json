@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "removeComments": true
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "reportFiles": ["start/**/*.{ts,tsx}", "finish/**/*.{ts,tsx}"]
+  }
+}
